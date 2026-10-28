@@ -1,0 +1,1603 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MD Cleaning — Professionel rengøring i København</title>
+<meta name="description" content="Mindre at gøre. Mere at leve. Rengøring til hjem og virksomheder i København og omegn. Få et tilbud på professionel rengøring.">
+<style>
+  :root{
+    --navy:#102A43;
+    --bluegreen:#147D75;
+    --turquoise:#35BFC0;
+    --white:#FFFFFF;
+    --light:#F6F9FB;
+    --tint:#E9F5F4;
+    --gray:#5A6B7B;
+    --radius:14px;
+    --shadow:0 6px 24px rgba(16,42,67,.08);
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    color:var(--navy);
+    background:var(--white);
+    line-height:1.6;
+  }
+  img{max-width:100%;display:block}
+  a{color:var(--bluegreen)}
+
+  .container{max-width:1120px;margin:0 auto;padding:0 24px}
+  section{padding:72px 0}
+  .section-light{background:var(--light)}
+  h1{font-size:clamp(2rem,4.5vw,3.1rem);line-height:1.15;letter-spacing:-.02em}
+  h2{font-size:clamp(1.5rem,3vw,2.1rem);line-height:1.2;letter-spacing:-.01em;margin-bottom:12px}
+  h3{font-size:1.2rem;margin-bottom:8px}
+  p{color:var(--gray)}
+  .lead{font-size:1.15rem;max-width:640px}
+  .center{text-align:center}
+  .center .lead{margin:0 auto}
+
+  .btn{
+    display:inline-block;padding:14px 30px;border-radius:999px;
+    font-weight:600;font-size:1rem;text-decoration:none;cursor:pointer;
+    border:2px solid transparent;transition:all .2s ease;
+  }
+  .btn-primary{background:var(--turquoise);color:var(--white)}
+  .btn-primary:hover{background:#2BA9AA;transform:translateY(-2px);box-shadow:0 8px 20px rgba(53,191,192,.35)}
+  .btn-outline{background:transparent;color:var(--bluegreen);border-color:var(--bluegreen)}
+  .btn-outline:hover{background:var(--bluegreen);color:var(--white)}
+  .btn-sm{padding:10px 22px;font-size:.95rem}
+
+  header{
+    position:sticky;top:0;z-index:100;background:rgba(255,255,255,.95);
+    backdrop-filter:blur(8px);border-bottom:1px solid #E5ECF2;
+  }
+  .nav{display:flex;align-items:center;justify-content:space-between;height:72px}
+  .logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--navy);font-weight:800;font-size:1.25rem;letter-spacing:-.02em}
+  .logo-mark{
+    width:38px;height:38px;border-radius:10px;
+    background:linear-gradient(135deg,var(--turquoise),var(--bluegreen));
+    display:flex;align-items:center;justify-content:center;color:#fff;font-weight:800;font-size:.95rem;
+  }
+  .nav-links{display:flex;align-items:center;gap:28px;list-style:none}
+  .nav-links a{color:var(--navy);text-decoration:none;font-weight:500;font-size:.98rem;padding:6px 0;border-bottom:2px solid transparent;transition:.2s}
+  .nav-links a:hover{color:var(--bluegreen)}
+  .nav-links a.active{color:var(--bluegreen);border-bottom-color:var(--turquoise)}
+  .lang-btn{
+    background:none;border:1.5px solid #D5DFE8;border-radius:999px;
+    padding:6px 16px;cursor:pointer;font-family:inherit;font-weight:700;
+    font-size:.88rem;color:var(--bluegreen);transition:.2s;
+  }
+  .lang-btn:hover{border-color:var(--bluegreen);background:var(--tint)}
+  .nav-cta{margin-left:4px}
+  .burger{display:none;background:none;border:none;cursor:pointer;padding:8px}
+  .burger span{display:block;width:24px;height:2.5px;background:var(--navy);margin:5px 0;border-radius:2px;transition:.3s}
+
+  .hero{padding:80px 0;background:linear-gradient(180deg,var(--light) 0%,var(--white) 100%)}
+  .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
+  .hero-text h1{margin-bottom:18px}
+  .hero-text .lead{margin-bottom:30px}
+  .hero-actions{display:flex;gap:18px;align-items:center;flex-wrap:wrap}
+  .link-secondary{color:var(--bluegreen);font-weight:600;text-decoration:none;border-bottom:2px solid var(--turquoise);padding-bottom:2px}
+  .link-secondary:hover{color:var(--navy)}
+
+  .ph{
+    border-radius:var(--radius);box-shadow:var(--shadow);
+    display:flex;align-items:flex-end;justify-content:flex-start;
+    position:relative;overflow:hidden;min-height:300px;
+  }
+  .ph::after{
+    content:attr(data-alt);
+    font-size:.78rem;color:rgba(16,42,67,.55);padding:10px 14px;
+    background:rgba(255,255,255,.7);border-radius:8px;margin:12px;backdrop-filter:blur(4px);
+  }
+  .ph-livingroom{background:linear-gradient(135deg,#EAF4F2 0%,#D7EDE9 45%,#C2E4E2 100%)}
+  .ph-home{background:linear-gradient(135deg,#F2F6F3 0%,#DCEEE8 60%,#CBE7E4 100%)}
+  .ph-office{background:linear-gradient(135deg,#EDF3F7 0%,#D9E9ED 55%,#C5E2E4 100%)}
+  .ph-kitchen{background:linear-gradient(135deg,#F4F6F1 0%,#E0EEE6 55%,#CDE8E3 100%)}
+  .ph-relax{background:linear-gradient(135deg,#F0F5F4 0%,#DEEEEC 50%,#CBE6E6 100%)}
+  .ph-deco{
+    position:absolute;inset:0;
+    background:
+      radial-gradient(circle at 75% 25%, rgba(53,191,192,.22) 0%, transparent 45%),
+      radial-gradient(circle at 20% 80%, rgba(20,125,117,.14) 0%, transparent 50%);
+  }
+
+  .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:32px}
+  .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+  .grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:28px}
+  .card{
+    background:var(--white);border-radius:var(--radius);box-shadow:var(--shadow);
+    overflow:hidden;display:flex;flex-direction:column;transition:transform .2s;
+  }
+  .card:hover{transform:translateY(-4px)}
+  .card .ph{min-height:220px;border-radius:0;box-shadow:none}
+  .card-body{padding:28px;display:flex;flex-direction:column;flex:1}
+  .card-body p{margin-bottom:20px;flex:1}
+
+  .icon-circle{
+    width:56px;height:56px;border-radius:50%;background:var(--tint);
+    display:flex;align-items:center;justify-content:center;margin-bottom:16px;
+  }
+  .icon-circle svg{width:26px;height:26px;stroke:var(--bluegreen);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+
+  .step{text-align:center;padding:0 10px}
+  .step-num{
+    width:48px;height:48px;border-radius:50%;background:var(--tint);color:var(--bluegreen);
+    display:flex;align-items:center;justify-content:center;font-weight:800;font-size:1.15rem;margin:0 auto 14px;
+  }
+  .step h3{font-size:1.05rem}
+  .step p{font-size:.95rem}
+  .note{font-size:.88rem;color:var(--gray);margin-top:36px;text-align:center;font-style:italic}
+
+  ul.check{list-style:none;margin:16px 0}
+  ul.check li{padding-left:32px;position:relative;margin-bottom:10px;color:var(--gray)}
+  ul.check li::before{
+    content:"";position:absolute;left:0;top:5px;width:18px;height:18px;border-radius:50%;
+    background:var(--tint);
+  }
+  ul.check li::after{
+    content:"";position:absolute;left:5px;top:10px;width:8px;height:5px;
+    border-left:2px solid var(--bluegreen);border-bottom:2px solid var(--bluegreen);transform:rotate(-45deg);
+  }
+  ul.cross li::before{background:#FDEEEE}
+  ul.cross li::after{
+    content:"✕";border:none;transform:none;left:4px;top:5px;color:#C0564F;font-size:.72rem;width:auto;height:auto;
+  }
+
+  .service-block{
+    background:var(--white);border:1px solid #E5ECF2;border-radius:var(--radius);
+    padding:32px;margin-bottom:24px;
+  }
+  .service-block h3{display:flex;align-items:center;gap:12px}
+  .service-block h3 .dot{width:10px;height:10px;border-radius:50%;background:var(--turquoise);flex-shrink:0}
+  .small-note{font-size:.85rem;color:var(--gray);font-style:italic;margin-top:12px}
+
+  .warn-box{
+    background:#FFF8EE;border:1px solid #F1E2C6;border-radius:var(--radius);padding:36px;
+  }
+  .warn-box h2{display:flex;align-items:center;gap:12px}
+  .warn-note{
+    display:flex;gap:12px;align-items:flex-start;margin-top:20px;padding:16px;
+    background:var(--white);border-radius:10px;font-size:.92rem;color:var(--navy);font-weight:500;
+  }
+  .warn-note svg{flex-shrink:0;width:22px;height:22px;stroke:#C98A1E;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;margin-top:2px}
+
+  .cta-band{
+    background:linear-gradient(135deg,var(--navy) 0%,#163A56 60%,var(--bluegreen) 140%);
+    border-radius:20px;padding:64px 48px;text-align:center;color:var(--white);
+  }
+  .cta-band h2{color:var(--white)}
+  .cta-band p{color:rgba(255,255,255,.85);max-width:560px;margin:0 auto 28px}
+
+  .page-hero{padding:72px 0 56px;background:linear-gradient(180deg,var(--tint) 0%,var(--white) 100%)}
+  .page-hero .hero-grid{gap:48px}
+
+  .toggle{
+    display:inline-flex;background:var(--light);border-radius:999px;padding:5px;gap:4px;margin-bottom:40px;
+  }
+  .toggle button{
+    border:none;background:transparent;padding:12px 28px;border-radius:999px;cursor:pointer;
+    font-size:1rem;font-weight:600;color:var(--gray);transition:.2s;font-family:inherit;
+  }
+  .toggle button.active{background:var(--white);color:var(--navy);box-shadow:0 2px 8px rgba(16,42,67,.12)}
+  form{background:var(--white);border:1px solid #E5ECF2;border-radius:var(--radius);padding:40px;box-shadow:var(--shadow)}
+  .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+  .field{display:flex;flex-direction:column;gap:6px}
+  .field.full{grid-column:1/-1}
+  label{font-weight:600;font-size:.92rem}
+  label .req{color:var(--turquoise)}
+  input,select,textarea{
+    font-family:inherit;font-size:1rem;padding:12px 14px;border:1.5px solid #D5DFE8;border-radius:10px;
+    color:var(--navy);background:var(--white);transition:border-color .2s;width:100%;
+  }
+  input:focus,select:focus,textarea:focus{outline:none;border-color:var(--turquoise);box-shadow:0 0 0 3px rgba(53,191,192,.15)}
+  textarea{resize:vertical;min-height:110px}
+  .checks{display:flex;flex-wrap:wrap;gap:10px}
+  .checks label{
+    display:flex;align-items:center;gap:8px;font-weight:500;font-size:.92rem;
+    border:1.5px solid #D5DFE8;border-radius:999px;padding:8px 16px;cursor:pointer;transition:.2s;user-select:none;
+  }
+  .checks input{width:auto;accent-color:var(--bluegreen)}
+  .checks label:has(input:checked){border-color:var(--bluegreen);background:var(--tint)}
+  .form-footer{margin-top:28px}
+  .form-footer p{font-size:.85rem;margin-top:14px}
+  .success-msg{
+    display:none;background:var(--tint);border:1px solid var(--turquoise);border-radius:var(--radius);
+    padding:40px;text-align:center;
+  }
+  .success-msg h3{color:var(--bluegreen);font-size:1.4rem;margin-bottom:8px}
+  .booking-note{
+    background:var(--tint);border-radius:10px;padding:14px 18px;font-size:.92rem;
+    color:var(--navy);display:inline-block;margin-top:14px;
+  }
+  .contact-side h2{font-size:1.3rem}
+  .contact-side p{font-size:.95rem;margin-bottom:12px}
+  .contact-item{display:flex;align-items:center;gap:12px;margin-bottom:14px;font-weight:500}
+  .contact-item svg{width:20px;height:20px;stroke:var(--bluegreen);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}
+  .kontakt-grid{display:grid;grid-template-columns:1.6fr 1fr;gap:48px;align-items:start}
+
+  footer{background:var(--navy);color:rgba(255,255,255,.75);padding:56px 0 32px;margin-top:80px}
+  .footer-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:40px;margin-bottom:40px}
+  footer h4{color:var(--white);font-size:1.05rem;margin-bottom:14px}
+  footer ul{list-style:none}
+  footer li{margin-bottom:8px}
+  footer a{color:rgba(255,255,255,.75);text-decoration:none;transition:.2s}
+  footer a:hover{color:var(--turquoise)}
+  .footer-brand{display:flex;align-items:center;gap:10px;color:var(--white);font-weight:800;font-size:1.2rem;margin-bottom:12px}
+  .footer-bottom{border-top:1px solid rgba(255,255,255,.12);padding-top:24px;font-size:.85rem;text-align:center;color:rgba(255,255,255,.5)}
+
+  .page{display:none}
+  .page.active{display:block;animation:fadeIn .35s ease}
+  @keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+
+  @media(max-width:900px){
+    .hero-grid,.grid-2,.grid-3,.grid-4,.kontakt-grid,.footer-grid{grid-template-columns:1fr}
+    .hero-grid{gap:36px}
+    .hero .ph{order:2}
+    .burger{display:block}
+    .nav-links{
+      position:fixed;top:72px;left:0;right:0;background:var(--white);
+      flex-direction:column;gap:0;padding:12px 24px 24px;border-bottom:1px solid #E5ECF2;
+      display:none;box-shadow:var(--shadow);
+    }
+    .nav-links.open{display:flex}
+    .nav-links li{width:100%}
+    .nav-links a{display:block;padding:14px 0;border-bottom:1px solid #EEF3F7}
+    .nav-cta{margin:14px 0 0;width:100%;text-align:center}
+    .lang-btn{margin-top:14px;width:100%;padding:12px}
+    .form-grid{grid-template-columns:1fr}
+    section{padding:56px 0}
+    .cta-band{padding:48px 24px}
+  }
+</style>
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header>
+  <div class="container nav">
+    <a href="#/" class="logo" data-route="/">
+      <span class="logo-mark">MD</span>
+      MD Cleaning
+    </a>
+    <button class="burger" aria-label="Menu" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#/" data-route="/" data-da="Forside" data-en="Home">Forside</a></li>
+      <li><a href="#/private" data-route="/private" data-da="Private" data-en="Residential">Private</a></li>
+      <li><a href="#/erhverv" data-route="/erhverv" data-da="Erhverv" data-en="Business">Erhverv</a></li>
+      <li><a href="#/om-os" data-route="/om-os" data-da="Om os" data-en="About us">Om os</a></li>
+      <li><a href="#/kontakt" data-route="/kontakt" data-da="Kontakt" data-en="Contact">Kontakt</a></li>
+      <li><button class="lang-btn" id="langBtn" onclick="toggleLang()" title="Switch language">EN</button></li>
+      <li><a href="#/kontakt" class="btn btn-primary btn-sm nav-cta" data-da="Få et tilbud" data-en="Get a quote">Få et tilbud</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+<!-- ================================================== -->
+<!-- ============ DANISH PAGES (default) ============== -->
+<!-- ================================================== -->
+
+<!-- ============ PAGE: FORSIDE (DA) ============ -->
+<div class="page" id="page-forside-da">
+
+  <div class="hero">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <h1>Mindre at gøre.<br>Mere at leve.</h1>
+        <p class="lead">Professionel rengøring til hjem og virksomheder i København og omegn.</p>
+        <div class="hero-actions">
+          <a href="#/kontakt" class="btn btn-primary">Få et tilbud</a>
+          <a href="#services-da" class="link-secondary" onclick="scrollToServices(event,'services-da')">Læs om vores services</a>
+        </div>
+      </div>
+      <div class="ph ph-livingroom" role="img" aria-label="Lys skandinavisk stue med rene, enkle linjer" data-alt="Lys skandinavisk stue med rene, enkle linjer">
+        <div class="ph-deco"></div>
+      </div>
+    </div>
+  </div>
+
+  <section id="services-da">
+    <div class="container">
+      <div class="center" style="margin-bottom:44px">
+        <h2>Vælg den løsning, der passer til dig</h2>
+        <p class="lead">Rengøring til både private hjem og arbejdspladser i København og omegn.</p>
+      </div>
+      <div class="grid-2">
+        <div class="card">
+          <div class="ph ph-home" role="img" aria-label="Person der tørrer støv af i lys stue" data-alt="Person der tørrer støv af i lys stue"><div class="ph-deco"></div></div>
+          <div class="card-body">
+            <h3>Rengøring til private</h3>
+            <p>Rent hjem, mindre på din to‑do‑liste.</p>
+            <a href="#/private" class="btn btn-outline btn-sm" style="align-self:flex-start">Læs mere</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="ph ph-office" role="img" aria-label="Rent, lyst kontor med skriveborde og naturligt lys" data-alt="Rent, lyst kontor med skriveborde og naturligt lys"><div class="ph-deco"></div></div>
+          <div class="card-body">
+            <h3>Rengøring til virksomheder</h3>
+            <p>Professionel rengøring til kontorer og erhvervslokaler.</p>
+            <a href="#/erhverv" class="btn btn-outline btn-sm" style="align-self:flex-start">Læs mere</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-light">
+    <div class="container center">
+      <h2>Én ting mindre på din to‑do‑liste.</h2>
+      <h3 style="color:var(--bluegreen);margin-bottom:18px">Mere tid til det, der betyder noget.</h3>
+      <p class="lead" style="margin-bottom:40px">
+        Når rengøringen er på plads, er der mere ro i hverdagen.<br>
+        Vi hjælper med at skabe rene, behagelige omgivelser, så du kan bruge tiden andetsteds.
+      </p>
+      <div class="grid-3">
+        <div class="step">
+          <div class="icon-circle" style="margin:0 auto 14px">
+            <svg viewBox="0 0 24 24"><path d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4L4.2 7.7l5.4-.8z"/></svg>
+          </div>
+          <h3>Rengøring tilpasset dit behov</h3>
+        </div>
+        <div class="step">
+          <div class="icon-circle" style="margin:0 auto 14px">
+            <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+          </div>
+          <h3>Fast aftale eller enkeltopgaver</h3>
+        </div>
+        <div class="step">
+          <div class="icon-circle" style="margin:0 auto 14px">
+            <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          </div>
+          <h3>Én fast indgang til spørgsmål og ændringer</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2 class="center" style="margin-bottom:48px">Sådan foregår det</h2>
+      <div class="grid-4">
+        <div class="step">
+          <div class="step-num">1</div>
+          <h3>Send en forespørgsel</h3>
+          <p>Udfyld formularen med dine ønsker og oplysninger.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <h3>Vi afklarer behov og areal</h3>
+          <p>Vi kontakter dig og gennemgår opgaven.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <h3>Du får et personligt tilbud</h3>
+          <p>Tilbuddet tilpasses dit hjem eller dine lokaler.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">4</div>
+          <h3>Vi starter, når du accepterer</h3>
+          <p>Vi aftaler opstart og praktiske detaljer.</p>
+        </div>
+      </div>
+      <p class="note">Rengøring aftales altid ud fra dine konkrete ønsker og rammer.</p>
+    </div>
+  </section>
+
+  <section style="padding-top:0">
+    <div class="container">
+      <div class="hero-grid" style="background:var(--light);border-radius:20px;padding:48px;align-items:center">
+        <div>
+          <h2>Klar til mere tid til dig selv?</h2>
+          <p class="lead" style="margin-bottom:26px">Fortæl os om dit hjem eller dine lokaler, så vender vi tilbage med et tilbud.</p>
+          <a href="#/kontakt" class="btn btn-primary">Få et tilbud</a>
+        </div>
+        <div class="ph ph-relax" role="img" aria-label="Lyst, roligt rum med enkel indretning" data-alt="Lyst, roligt rum med enkel indretning" style="min-height:260px"><div class="ph-deco"></div></div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ============ PAGE: PRIVATE (DA) ============ -->
+<div class="page" id="page-private-da">
+
+  <div class="page-hero">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <h1>Et rent hjem.<br>Mere tid til livet.</h1>
+        <p class="lead" style="margin:18px 0 28px">Fleksibel rengøring til private hjem i København og omegn – fra løbende vedligehold til grundigere opgaver.</p>
+        <a href="#/kontakt" class="btn btn-primary">Få et tilbud</a>
+      </div>
+      <div class="ph ph-kitchen" role="img" aria-label="Person der rengør køkkenbord i lyst skandinavisk køkken" data-alt="Person der rengør køkkenbord i lyst skandinavisk køkken"><div class="ph-deco"></div></div>
+    </div>
+  </div>
+
+  <section style="padding-bottom:40px">
+    <div class="container center">
+      <h2>Rengøring, der passer til din hverdag</h2>
+      <p class="lead">
+        Vi aftaler omfang, frekvens og fokusområder sammen med dig.<br>
+        Du vælger, om det skal være en enkelt opgave eller en fast aftale.
+      </p>
+    </div>
+  </section>
+
+  <section style="padding-top:0">
+    <div class="container">
+      <h2>Vores services til private</h2>
+      <p style="margin-bottom:32px;max-width:680px">Nedenfor finder du eksempler på, hvad vi typisk hjælper med. Det konkrete indhold aftales altid i tilbuddet.</p>
+
+      <div class="service-block">
+        <h3><span class="dot"></span>Almindelig rengøring (løbende vedligehold)</h3>
+        <p>Regelmæssig rengøring, der holder hjemmet pænt i hverdagen. Typisk omfatter det fx:</p>
+        <ul class="check">
+          <li>Støve af på tilgængelige overflader</li>
+          <li>Støvsugning af gulve og tæpper</li>
+          <li>Gulvvask hvor det er passende</li>
+          <li>Let oprydning</li>
+          <li>Rengøring af vask, armaturer, spejl, toilet og tilgængelige overflader i bad</li>
+          <li>Aftørring af køkkenbord, vask og ydersider af hårde hvidevarer</li>
+        </ul>
+      </div>
+
+      <div class="service-block">
+        <h3><span class="dot"></span>Hovedrengøring (mere grundig gennemgang)</h3>
+        <p>Når hjemmet skal have en mere detaljeret rengøring. Her lægges der typisk vægt på:</p>
+        <ul class="check">
+          <li>Tilgængelige overflader i hele boligen</li>
+          <li>Lister og plinter</li>
+          <li>Mere grundig rengøring af køkken og bad</li>
+          <li>Gulve og områder, der ikke tages ved almindelig vedligeholdelse</li>
+        </ul>
+      </div>
+
+      <div class="service-block">
+        <h3><span class="dot"></span>Grundig rengøring af køkken og badeværelse</h3>
+        <p>Fokuseret indsats dér, hvor snavs og belægninger samler sig. Typisk med fokus på:</p>
+        <ul class="check">
+          <li>Områder med belægninger, fedt eller ophobet snavs</li>
+          <li>Overflader omkring vask, komfur, bruseniche, armaturer m.m.</li>
+        </ul>
+        <p class="small-note">Omfang og eventuelle begrænsninger afklares altid, før arbejdet går i gang.</p>
+      </div>
+
+      <div class="service-block">
+        <h3><span class="dot"></span>Rengøring ved flytning</h3>
+        <p>
+          Rengøring i forbindelse med fraflytning eller inden nye beboere flytter ind.<br>
+          Den præcise opgaveliste og ønsket stand afklares sammen med dig og indgår i tilbuddet.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-light">
+    <div class="container center">
+      <h2>Fast aftale eller enkeltopgave</h2>
+      <p class="lead">
+        Vi hjælper både kunder med faste aftaler og enkeltstående opgaver.<br>
+        Frekvensen aftales individuelt – fx ugentligt, hver 14. dag eller månedligt.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="warn-box">
+        <h2>
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#C98A1E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg>
+          Hvad er ikke automatisk inkluderet?
+        </h2>
+        <p>Følgende opgaver er ikke automatisk en del af rengøringen:</p>
+        <ul class="check cross">
+          <li>Indvendig rengøring af ovn, køleskab eller skabe</li>
+          <li>Vinduespudsning</li>
+          <li>Fjernelse af genstridigt kalk</li>
+          <li>Andre særlige eller tidskrævende opgaver</li>
+        </ul>
+        <div class="warn-note">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg>
+          Disse opgaver er ikke automatisk inkluderet. Nævn dem i din forespørgsel, så vi kan inkludere dem eksplicit i tilbuddet.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-top:0">
+    <div class="container">
+      <div class="cta-band">
+        <h2>Klar til at få hjælp til rengøringen?</h2>
+        <p>Fortæl os om din bolig og dine ønsker, så vender vi tilbage med et personligt tilbud.</p>
+        <a href="#/kontakt" class="btn btn-primary">Få et tilbud</a>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ============ PAGE: ERHVERV (DA) ============ -->
+<div class="page" id="page-erhverv-da">
+
+  <div class="page-hero">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <h1>Et rent arbejdsmiljø.<br>Mere overskud til forretningen.</h1>
+        <p class="lead" style="margin:18px 0 28px">Rengøring til kontorer, klinikker og andre erhvervslokaler i København og omegn.</p>
+        <a href="#/kontakt" class="btn btn-primary">Få et tilbud</a>
+      </div>
+      <div class="ph ph-office" role="img" aria-label="Rent, lyst kontor med skriveborde og planter" data-alt="Rent, lyst kontor med skriveborde og planter"><div class="ph-deco"></div></div>
+    </div>
+  </div>
+
+  <section style="padding-bottom:40px">
+    <div class="container center">
+      <h2>Et velholdt arbejdsmiljø</h2>
+      <p class="lead">
+        Et rent miljø giver ro og komfort for medarbejdere og et professionelt indtryk for besøgende.<br>
+        Vi tilpasser rengøringen til jeres lokaler og arbejdsgange.
+      </p>
+    </div>
+  </section>
+
+  <section style="padding-top:0">
+    <div class="container">
+      <h2>Rengøring tilpasset jeres virksomhed</h2>
+      <p style="margin-bottom:32px;max-width:680px">Nedenfor er eksempler på, hvad vi typisk hjælper virksomheder med. Indhold, omfang og tider aftales altid i tilbuddet.</p>
+
+      <div class="service-block">
+        <h3><span class="dot"></span>Kontorrengøring</h3>
+        <p>
+          Et rent kontor giver plads til fokus og en behagelig arbejdsdag.<br>
+          Typisk omfatter det rengøring af skriveborde/arbejdsområder, tilgængelige overflader, gulve og fællesområder – som aftalt i tilbuddet.
+        </p>
+      </div>
+
+      <div class="service-block">
+        <h3><span class="dot"></span>Regelmæssig erhvervsrengøring</h3>
+        <p>
+          Fast rengøring af jeres lokaler med en frekvens, der passer til virksomheden.<br>
+          Vi aftaler faste tidspunkter og opgaver, så driften forstyrres mindst muligt.
+        </p>
+      </div>
+
+      <div class="service-block">
+        <h3><span class="dot"></span>Engangsrengøring for virksomheder</h3>
+        <p>
+          Når der er brug for en ekstra grundig gennemgang – fx efter ombygning, flytning eller arrangementer.<br>
+          Omfanget defineres sammen med jer, før vi afgiver tilbud.
+        </p>
+      </div>
+
+      <div class="service-block">
+        <h3><span class="dot"></span>Rengøring af klinikker og skønhedssaloner</h3>
+        <p>
+          Rengøring til klinik- og behandlingsmiljøer, tilpasset jeres indretning og behov.<br>
+          Eventuelle særlige hygiejnekrav skal altid afklares, før vi giver et tilbud.
+        </p>
+      </div>
+
+      <div class="service-block">
+        <h3><span class="dot"></span>Trappevask og fællesarealer</h3>
+        <p>Rengøring af opgange, trapper og andre fælles områder i ejendomme og erhvervsbygninger.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-light">
+    <div class="container">
+      <h2 class="center" style="margin-bottom:36px">Fordele for jeres virksomhed</h2>
+      <div class="grid-3">
+        <div class="step">
+          <div class="icon-circle" style="margin:0 auto 14px">
+            <svg viewBox="0 0 24 24"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6"/></svg>
+          </div>
+          <h3>Velholdte, indbydende lokaler</h3>
+        </div>
+        <div class="step">
+          <div class="icon-circle" style="margin:0 auto 14px">
+            <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3>Mere komfortable rammer for medarbejdere</h3>
+        </div>
+        <div class="step">
+          <div class="icon-circle" style="margin:0 auto 14px">
+            <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
+          </div>
+          <h3>Et professionelt indtryk over for kunder og gæster</h3>
+        </div>
+      </div>
+      <p class="note">Vi afgiver ikke løfter om særlige standarder eller certificeringer, der ikke er aftalt.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="cta-band">
+        <h2>Lad os tage en snak om jeres lokaler</h2>
+        <p>Beskriv jeres virksomhed, lokaler og ønsker, så vender vi tilbage med et forslag til løsning og et tilbud.</p>
+        <a href="#/kontakt" class="btn btn-primary">Få et tilbud</a>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ============ PAGE: OM OS (DA) ============ -->
+<div class="page" id="page-omos-da">
+
+  <div class="page-hero">
+    <div class="container center">
+      <h1>Om MD Cleaning</h1>
+      <p class="lead" style="margin:20px auto 0;max-width:720px">
+        MD Cleaning tilbyder rengøring til private hjem og virksomheder i København og omegn.
+        Vi lægger vægt på omhu, pålidelighed og en løsning, der passer til kundens behov.
+        Vores mål er at skabe rene, behagelige omgivelser og give vores kunder mere tid til det, der betyder noget.
+      </p>
+    </div>
+  </div>
+
+  <section>
+    <div class="container">
+      <h2 class="center" style="margin-bottom:44px">Hvad du kan forvente</h2>
+      <div class="grid-3">
+        <div class="card" style="padding:32px">
+          <div class="icon-circle">
+            <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+          </div>
+          <h3>Omhu</h3>
+          <p>Vi arbejder struktureret og med fokus på detaljer i de områder, vi har aftalt.</p>
+        </div>
+        <div class="card" style="padding:32px">
+          <div class="icon-circle">
+            <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3>Pålidelighed</h3>
+          <p>Vi lægger vægt på klare aftaler om tid, omfang og adgangsforhold.</p>
+        </div>
+        <div class="card" style="padding:32px">
+          <div class="icon-circle">
+            <svg viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94z"/></svg>
+          </div>
+          <h3>Tilpassede løsninger</h3>
+          <p>Hvert hjem og hver virksomhed er forskellig. Vi justerer opgaverne, så de matcher dine behov.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-light">
+    <div class="container center">
+      <h2>Hvor vi arbejder</h2>
+      <p class="lead" style="margin-bottom:28px">
+        Vi tilbyder rengøring i København og omegn.<br>
+        Kontakt os gerne, hvis du er i tvivl, om din adresse er inden for vores område.
+      </p>
+      <a href="#/kontakt" class="btn btn-outline">Få et tilbud</a>
+    </div>
+  </section>
+</div>
+
+<!-- ============ PAGE: KONTAKT (DA) ============ -->
+<div class="page" id="page-kontakt-da">
+
+  <div class="page-hero">
+    <div class="container center">
+      <h1>Få et tilbud på rengøring</h1>
+      <p class="lead" style="margin:20px auto 0;max-width:640px">
+        Udfyld formularen herunder, så vender vi tilbage hurtigst muligt med spørgsmål eller et personligt tilbud.
+      </p>
+      <div class="booking-note">
+        <strong>Bemærk:</strong> Din forespørgsel er ikke en bekræftet booking.
+      </div>
+    </div>
+  </div>
+
+  <section>
+    <div class="container kontakt-grid">
+      <div>
+        <div class="toggle" id="toggle-da" role="tablist">
+          <button type="button" id="tab-privat-da" class="active" onclick="switchForm('privat','da')" role="tab" aria-selected="true">Private (hjem)</button>
+          <button type="button" id="tab-erhverv-da" onclick="switchForm('erhverv','da')" role="tab" aria-selected="false">Erhverv (virksomhed)</button>
+        </div>
+
+        <div class="success-msg" id="success-da">
+          <h3>Tak for din forespørgsel</h3>
+          <p>Vi vender tilbage hurtigst muligt.</p>
+        </div>
+
+        <form id="form-privat-da" onsubmit="submitForm(event,'da')" novalidate>
+          <h2 style="margin-bottom:24px">Forespørgsel – privat rengøring</h2>
+          <div class="form-grid">
+            <div class="field">
+              <label for="p-navn-da">Navn <span class="req">*</span></label>
+              <input type="text" id="p-navn-da" name="navn" required autocomplete="name">
+            </div>
+            <div class="field">
+              <label for="p-email-da">E‑mail <span class="req">*</span></label>
+              <input type="email" id="p-email-da" name="email" required autocomplete="email">
+            </div>
+            <div class="field">
+              <label for="p-telefon-da">Telefon <span class="req">*</span></label>
+              <input type="tel" id="p-telefon-da" name="telefon" required autocomplete="tel">
+            </div>
+            <div class="field">
+              <label for="p-postnr-da">Område/postnummer <span class="req">*</span></label>
+              <input type="text" id="p-postnr-da" name="postnummer" required autocomplete="postal-code">
+            </div>
+            <div class="field">
+              <label for="p-boligtype-da">Boligtype</label>
+              <select id="p-boligtype-da" name="boligtype">
+                <option value="">Vælg…</option>
+                <option>Lejlighed</option>
+                <option>Hus</option>
+                <option>Rækkehus</option>
+                <option>Andet</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="p-areal-da">Ca. areal (m²) <span style="font-weight:400;color:var(--gray)">(valgfrit)</span></label>
+              <input type="number" id="p-areal-da" name="areal" min="1" inputmode="numeric">
+            </div>
+            <div class="field full">
+              <label for="p-rum-da">Antal værelser og badeværelser</label>
+              <input type="text" id="p-rum-da" name="rum" placeholder="Fx 3 værelser og 1 badeværelse">
+            </div>
+            <div class="field full">
+              <label>Ønsket service</label>
+              <div class="checks">
+                <label><input type="checkbox" name="service" value="Almindelig rengøring"> Almindelig rengøring</label>
+                <label><input type="checkbox" name="service" value="Hovedrengøring"> Hovedrengøring</label>
+                <label><input type="checkbox" name="service" value="Grundig rengøring af køkken/bad"> Grundig rengøring af køkken/bad</label>
+                <label><input type="checkbox" name="service" value="Rengøring ved flytning"> Rengøring ved flytning</label>
+                <label><input type="checkbox" name="service" value="Andet"> Andet</label>
+              </div>
+            </div>
+            <div class="field full">
+              <label for="p-frekvens-da">Frekvens</label>
+              <select id="p-frekvens-da" name="frekvens">
+                <option value="">Vælg…</option>
+                <option>Enkeltopgave</option>
+                <option>Ugentligt</option>
+                <option>Hver 14. dag</option>
+                <option>Månedligt</option>
+                <option>Andet</option>
+              </select>
+            </div>
+            <div class="field full">
+              <label for="p-besked-da">Beskriv dine behov og særlige ønsker</label>
+              <textarea id="p-besked-da" name="besked"></textarea>
+            </div>
+          </div>
+          <div class="form-footer">
+            <button type="submit" class="btn btn-primary">Send forespørgsel</button>
+            <p>Vi vender tilbage pr. mail eller telefon for at afklare eventuelle spørgsmål, før vi sender et tilbud.</p>
+          </div>
+        </form>
+
+        <form id="form-erhverv-da" onsubmit="submitForm(event,'da')" novalidate style="display:none">
+          <h2 style="margin-bottom:24px">Forespørgsel – erhvervsrengøring</h2>
+          <div class="form-grid">
+            <div class="field">
+              <label for="e-kontakt-da">Kontaktperson <span class="req">*</span></label>
+              <input type="text" id="e-kontakt-da" name="kontaktperson" required autocomplete="name">
+            </div>
+            <div class="field">
+              <label for="e-firma-da">Virksomhedsnavn <span class="req">*</span></label>
+              <input type="text" id="e-firma-da" name="virksomhed" required autocomplete="organization">
+            </div>
+            <div class="field">
+              <label for="e-email-da">E‑mail <span class="req">*</span></label>
+              <input type="email" id="e-email-da" name="email" required autocomplete="email">
+            </div>
+            <div class="field">
+              <label for="e-telefon-da">Telefon <span class="req">*</span></label>
+              <input type="tel" id="e-telefon-da" name="telefon" required autocomplete="tel">
+            </div>
+            <div class="field">
+              <label for="e-lokale-da">Lokaletype</label>
+              <select id="e-lokale-da" name="lokaletype">
+                <option value="">Vælg…</option>
+                <option>Kontor</option>
+                <option>Klinik</option>
+                <option>Butik</option>
+                <option>Lager</option>
+                <option>Andet</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="e-areal-da">Ca. areal (m²)</label>
+              <input type="number" id="e-areal-da" name="areal" min="1" inputmode="numeric">
+            </div>
+            <div class="field full">
+              <label for="e-frekvens-da">Frekvens</label>
+              <select id="e-frekvens-da" name="frekvens">
+                <option value="">Vælg…</option>
+                <option>Enkeltopgave</option>
+                <option>Ugentligt</option>
+                <option>Flere gange om ugen</option>
+                <option>Hver 14. dag</option>
+                <option>Månedligt</option>
+                <option>Andet</option>
+              </select>
+            </div>
+            <div class="field full">
+              <label for="e-besked-da">Særlige krav / bemærkninger</label>
+              <textarea id="e-besked-da" name="besked"></textarea>
+            </div>
+          </div>
+          <div class="form-footer">
+            <button type="submit" class="btn btn-primary">Send forespørgsel</button>
+          </div>
+        </form>
+      </div>
+
+      <aside class="contact-side">
+        <div class="card" style="padding:32px">
+          <h2 style="margin-bottom:16px">Andre måder at kontakte os på</h2>
+          <div class="contact-item">
+            <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg>
+            <a href="mailto:contact.mdcleaning@gmail.com">contact.mdcleaning@gmail.com</a>
+          </div>
+          <div class="contact-item">
+            <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <span style="color:var(--gray)">Telefon: oplyses snarest</span>
+          </div>
+          <div class="contact-item">
+            <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span style="color:var(--gray)">København og omegn</span>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </section>
+</div>
+  <!-- ================================================== -->
+<!-- ============ ENGLISH PAGES ======================= -->
+<!-- ================================================== -->
+
+<!-- ============ PAGE: HOME (EN) ============ -->
+<div class="page" id="page-forside-en">
+
+  <div class="hero">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <h1>Less to do.<br>More to live.</h1>
+        <p class="lead">Professional cleaning for homes and businesses in Copenhagen and the surrounding area.</p>
+        <div class="hero-actions">
+          <a href="#/kontakt" class="btn btn-primary">Get a quote</a>
+          <a href="#services-en" class="link-secondary" onclick="scrollToServices(event,'services-en')">Read about our services</a>
+        </div>
+      </div>
+      <div class="ph ph-livingroom" role="img" aria-label="Bright Scandinavian living room with clean, simple lines" data-alt="Bright Scandinavian living room with clean, simple lines">
+        <div class="ph-deco"></div>
+      </div>
+    </div>
+  </div>
+
+  <section id="services-en">
+    <div class="container">
+      <div class="center" style="margin-bottom:44px">
+        <h2>Choose the solution that fits you</h2>
+        <p class="lead">Cleaning for both private homes and workplaces in Copenhagen and the surrounding area.</p>
+      </div>
+      <div class="grid-2">
+        <div class="card">
+          <div class="ph ph-home" role="img" aria-label="Person dusting in a bright living room" data-alt="Person dusting in a bright living room"><div class="ph-deco"></div></div>
+          <div class="card-body">
+            <h3>Cleaning for private homes</h3>
+            <p>A clean home, less on your to‑do list.</p>
+            <a href="#/private" class="btn btn-outline btn-sm" style="align-self:flex-start">Read more</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="ph ph-office" role="img" aria-label="Clean, bright office with desks and natural light" data-alt="Clean, bright office with desks and natural light"><div class="ph-deco"></div></div>
+          <div class="card-body">
+            <h3>Cleaning for businesses</h3>
+            <p>Professional cleaning for offices and commercial spaces.</p>
+            <a href="#/erhverv" class="btn btn-outline btn-sm" style="align-self:flex-start">Read more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-light">
+    <div class="container center">
+      <h2>One less thing on your to‑do list.</h2>
+      <h3 style="color:var(--bluegreen);margin-bottom:18px">More time for what matters.</h3>
+      <p class="lead" style="margin-bottom:40px">
+        When the cleaning is taken care of, everyday life feels calmer.<br>
+        We help create clean, comfortable surroundings, so you can spend your time elsewhere.
+      </p>
+      <div class="grid-3">
+        <div class="step">
+          <div class="icon-circle" style="margin:0 auto 14px">
+            <svg viewBox="0 0 24 24"><path d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4L4.2 7.7l5.4-.8z"/></svg>
+          </div>
+          <h3>Cleaning tailored to your needs</h3>
+        </div>
+        <div class="step">
+          <div class="icon-circle" style="margin:0 auto 14px">
+            <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+          </div>
+          <h3>Recurring agreement or one‑time tasks</h3>
+        </div>
+        <div class="step">
+          <div class="icon-circle" style="margin:0 auto 14px">
+            <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          </div>
+          <h3>One single point of contact for questions and changes</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2 class="center" style="margin-bottom:48px">How it works</h2>
+      <div class="grid-4">
+        <div class="step">
+          <div class="step-num">1</div>
+          <h3>Send an inquiry</h3>
+          <p>Fill out the form with your wishes and details.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <h3>We clarify needs and area</h3>
+          <p>We contact you and go through the task.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <h3>You receive a personal quote</h3>
+          <p>The quote is tailored to your home or premises.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">4</div>
+          <h3>We start when you accept</h3>
+          <p>We agree on the start date and practical details.</p>
+        </div>
+      </div>
+      <p class="note">Cleaning is always agreed upon based on your specific wishes and circumstances.</p>
+    </div>
+  </section>
+
+  <section style="padding-top:0">
+    <div class="container">
+      <div class="hero-grid" style="background:var(--light);border-radius:20px;padding:48px;align-items:center">
+        <div>
+          <h2>Ready for more time for yourself?</h2>
+          <p class="lead" style="margin-bottom:26px">Tell us about your home or premises, and we will get back to you with a quote.</p>
+          <a href="#/kontakt" class="btn btn-primary">Get a quote</a>
+        </div>
+        <div class="ph ph-relax" role="img" aria-label="Bright, calm room with simple decor" data-alt="Bright, calm room with simple decor" style="min-height:260px"><div class="ph-deco"></div></div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ============ PAGE: RESIDENTIAL (EN) ============ -->
+<div class="page" id="page-private-en">
+
+  <div class="page-hero">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <h1>A clean home.<br>More time for life.</h1>
+        <p class="lead" style="margin:18px 0 28px">Flexible cleaning for private homes in Copenhagen and the surrounding area – from ongoing maintenance to more thorough tasks.</p>
+        <a href="#/kontakt" class="btn btn-primary">Get a quote</a>
+      </div>
+      <div class="ph ph-kitchen" role="img" aria-label="Person cleaning a kitchen counter in a bright Scandinavian kitchen" data-alt="Person cleaning a kitchen counter in a bright Scandinavian kitchen"><div class="ph-deco"></div></div>
+    </div>
+  </div>
+
+  <section style="padding-bottom:40px">
+    <div class="container center">
+      <h2>Cleaning that fits your everyday life</h2>
+      <p class="lead">
+        We agree on scope, frequency and focus areas together with you.<br>
+        You choose whether it should be a one‑time task or a recurring agreement.
+      </p>
+    </div>
+  </section>
+
+  <section style="padding-top:0">
+    <div class="container">
+      <h2>Our services for private homes</h2>
+      <p style="margin-bottom:32px;max-width:680px">Below you will find examples of what we typically help with. The specific content is always agreed upon in the quote.</p>
+
+      <div class="service-block">
+        <h3><span class="dot"></span>Regular cleaning (ongoing maintenance)</h3>
+        <p>Regular cleaning that keeps the home nice in everyday life. Typically this includes, for example:</p>
+        <ul class="check">
+          <li>Dusting accessible surfaces</li>
+          <li>Vacuuming floors and carpets</li>
+          <li>Floor washing where appropriate</li>
+          <li>Light tidying</li>
+          <li>Cleaning of sink, fixtures, mirror, toilet and accessible surfaces in the bathroom</li>
+          <li>Wiping kitchen counters, sink and exteriors of appliances</li>
+        </ul>
+      </div>
+
+      <div class="service-block">
+        <h3><span class="dot"></span>Deep cleaning (more thorough treatment)</h3>
+        <p>When your home needs a more detailed cleaning. Here, emphasis is typically placed on:</p>
+        <ul class="check">
+          <li>Accessible surfaces throughout the home</li>
+          <li>Skirting boards and plinths</li>
+          <li>More thorough cleaning of kitchen and bathroom</li>
+          <li>Floors and areas not covered by regular maintenance</li>
+        </ul>
+      </div>
+
+      <div class="service-block">
+        <h3><span class="dot"></span>Thorough cleaning of kitchen and bathroom</h3>
+        <p>A focused effort where dirt and build‑up accumulate. Typically with focus on:</p>
+        <ul class="check">
+          <li>Areas with build‑up, grease or accumulated dirt</li>
+          <li>Surfaces around the sink, stove, shower, fixtures etc.</li>
+        </ul>
+        <p class="small-note">Scope and any limitations are always clarified before the work begins.</p>
+      </div>
+
+      <div class="service-block">
+        <h3><span class="dot"></span>Moving cleaning</h3>
+        <p>
+          Cleaning in connection with moving out or before new residents move in.<br>
+          The exact task list and desired condition are clarified together with you and included in the quote.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-light">
+    <div class="container center">
+      <h2>Recurring agreement or one‑time task</h2>
+      <p class="lead">
+        We help both customers with recurring agreements and one‑time tasks.<br>
+        The frequency is agreed individually – e.g. weekly, every other week or monthly.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="warn-box">
+        <h2>
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#C98A1E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg>
+          What is not automatically included?
+        </h2>
+        <p>The following tasks are not automatically part of the cleaning:</p>
+        <ul class="check cross">
+          <li>Interior cleaning of oven, refrigerator or cabinets</li>
+          <li>Window cleaning</li>
+          <li>Removal of stubborn limescale</li>
+          <li>Other special or time‑consuming tasks</li>
+        </ul>
+        <div class="warn-note">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg>
+          These tasks are not automatically included. Mention them in your inquiry so we can include them explicitly in the quote.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-top:0">
+    <div class="container">
+      <div class="cta-band">
+        <h2>Ready to get help with the cleaning?</h2>
+        <p>Tell us about your home and your wishes, and we will get back to you with a personal quote.</p>
+        <a href="#/kontakt" class="btn btn-primary">Get a quote</a>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ============ PAGE: BUSINESS (EN) ============ -->
+<div class="page" id="page-erhverv-en">
+
+  <div class="page-hero">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <h1>A clean work environment.<br>More energy for the business.</h1>
+        <p class="lead" style="margin:18px 0 28px">Cleaning for offices, clinics and other commercial spaces in Copenhagen and the surrounding area.</p>
+        <a href="#/kontakt" class="btn btn-primary">Get a quote</a>
+      </div>
+      <div class="ph ph-office" role="img" aria-label="Clean, bright office with desks and plants" data-alt="Clean, bright office with desks and plants"><div class="ph-deco"></div></div>
+    </div>
+  </div>
+
+  <section style="padding-bottom:40px">
+    <div class="container center">
+      <h2>A well‑maintained work environment</h2>
+      <p class="lead">
+        A clean environment provides calm and comfort for employees and a professional impression for visitors.<br>
+        We adapt the cleaning to your premises and workflows.
+      </p>
+    </div>
+  </section>
+
+  <section style="padding-top:0">
+    <div class="container">
+      <h2>Cleaning tailored to your business</h2>
+      <p style="margin-bottom:32px;max-width:680px">Below are examples of what we typically help businesses with. Content, scope and schedules are always agreed upon in the quote.</p>
+
+      <div class="service-block">
+        <h3><span class="dot"></span>Office cleaning</h3>
+        <p>
+          A clean office makes room for focus and a pleasant workday.<br>
+          Typically this includes cleaning of desks/work areas, accessible surfaces, floors and common areas – as agreed in the quote.
+        </p>
+      </div>
+
+      <div class="service-block">
+        <h3><span class="dot"></span>Regular commercial cleaning</h3>
+        <p>
+          Recurring cleaning of your premises with a frequency that suits your business.<br>
+          We agree on fixed times and tasks, so operations are disturbed as little as possible.
+        </p>
+      </div>
+
+      <div class="service-block">
+        <h3><span class="dot"></span>One‑time cleaning for businesses</h3>
+        <p>
+          When an extra thorough treatment is needed – e.g. after renovation, moving or events.<br>
+          The scope is defined together with you before we provide a quote.
+        </p>
+      </div>
+
+      <div class="service-block">
+        <h3><span class="dot"></span>Cleaning of clinics and beauty salons</h3>
+        <p>
+          Cleaning for clinic and treatment environments, adapted to your layout and needs.<br>
+          Any special hygiene requirements must always be clarified before we provide a quote.
+        </p>
+      </div>
+
+      <div class="service-block">
+        <h3><span class="dot"></span>Staircase cleaning and common areas</h3>
+        <p>Cleaning of stairwells, staircases and other common areas in residential and commercial buildings.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-light">
+    <div class="container">
+      <h2 class="center" style="margin-bottom:36px">Benefits for your business</h2>
+      <div class="grid-3">
+        <div class="step">
+          <div class="icon-circle" style="margin:0 auto 14px">
+            <svg viewBox="0 0 24 24"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6"/></svg>
+          </div>
+          <h3>Well‑maintained, inviting premises</h3>
+        </div>
+        <div class="step">
+          <div class="icon-circle" style="margin:0 auto 14px">
+            <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3>More comfortable surroundings for employees</h3>
+        </div>
+        <div class="step">
+          <div class="icon-circle" style="margin:0 auto 14px">
+            <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
+          </div>
+          <h3>A professional impression for customers and guests</h3>
+        </div>
+      </div>
+      <p class="note">We do not make promises about special standards or certifications that have not been agreed upon.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="cta-band">
+        <h2>Let's have a chat about your premises</h2>
+        <p>Describe your business, premises and wishes, and we will get back to you with a proposed solution and a quote.</p>
+        <a href="#/kontakt" class="btn btn-primary">Get a quote</a>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ============ PAGE: ABOUT US (EN) ============ -->
+<div class="page" id="page-omos-en">
+
+  <div class="page-hero">
+    <div class="container center">
+      <h1>About MD Cleaning</h1>
+      <p class="lead" style="margin:20px auto 0;max-width:720px">
+        MD Cleaning offers cleaning for private homes and businesses in Copenhagen and the surrounding area.
+        We emphasize care, reliability and a solution that fits the customer's needs.
+        Our goal is to create clean, comfortable surroundings and give our customers more time for what matters.
+      </p>
+    </div>
+  </div>
+
+  <section>
+    <div class="container">
+      <h2 class="center" style="margin-bottom:44px">What you can expect</h2>
+      <div class="grid-3">
+        <div class="card" style="padding:32px">
+          <div class="icon-circle">
+            <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+          </div>
+          <h3>Care</h3>
+          <p>We work in a structured manner with focus on details in the areas we have agreed upon.</p>
+        </div>
+        <div class="card" style="padding:32px">
+          <div class="icon-circle">
+            <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3>Reliability</h3>
+          <p>We emphasize clear agreements about time, scope and access conditions.</p>
+        </div>
+        <div class="card" style="padding:32px">
+          <div class="icon-circle">
+            <svg viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94z"/></svg>
+          </div>
+          <h3>Tailored solutions</h3>
+          <p>Every home and every business is different. We adjust the tasks to match your needs.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-light">
+    <div class="container center">
+      <h2>Where we work</h2>
+      <p class="lead" style="margin-bottom:28px">
+        We offer cleaning in Copenhagen and the surrounding area.<br>
+        Feel free to contact us if you are unsure whether your address is within our area.
+      </p>
+      <a href="#/kontakt" class="btn btn-outline">Get a quote</a>
+    </div>
+  </section>
+</div>
+
+<!-- ============ PAGE: CONTACT (EN) ============ -->
+<div class="page" id="page-kontakt-en">
+
+  <div class="page-hero">
+    <div class="container center">
+      <h1>Get a quote for cleaning</h1>
+      <p class="lead" style="margin:20px auto 0;max-width:640px">
+        Fill out the form below, and we will get back to you as soon as possible with questions or a personal quote.
+      </p>
+      <div class="booking-note">
+        <strong>Note:</strong> Your inquiry is not a confirmed booking.
+      </div>
+    </div>
+  </div>
+
+  <section>
+    <div class="container kontakt-grid">
+      <div>
+        <div class="toggle" id="toggle-en" role="tablist">
+          <button type="button" id="tab-privat-en" class="active" onclick="switchForm('privat','en')" role="tab" aria-selected="true">Residential (home)</button>
+          <button type="button" id="tab-erhverv-en" onclick="switchForm('erhverv','en')" role="tab" aria-selected="false">Business (company)</button>
+        </div>
+
+        <div class="success-msg" id="success-en">
+          <h3>Thank you for your inquiry</h3>
+          <p>We will get back to you as soon as possible.</p>
+        </div>
+
+        <form id="form-privat-en" onsubmit="submitForm(event,'en')" novalidate>
+          <h2 style="margin-bottom:24px">Inquiry – residential cleaning</h2>
+          <div class="form-grid">
+            <div class="field">
+              <label for="p-navn-en">Name <span class="req">*</span></label>
+              <input type="text" id="p-navn-en" name="navn" required autocomplete="name">
+            </div>
+            <div class="field">
+              <label for="p-email-en">E‑mail <span class="req">*</span></label>
+              <input type="email" id="p-email-en" name="email" required autocomplete="email">
+            </div>
+            <div class="field">
+              <label for="p-telefon-en">Phone <span class="req">*</span></label>
+              <input type="tel" id="p-telefon-en" name="telefon" required autocomplete="tel">
+            </div>
+            <div class="field">
+              <label for="p-postnr-en">Area/postal code <span class="req">*</span></label>
+              <input type="text" id="p-postnr-en" name="postnummer" required autocomplete="postal-code">
+            </div>
+            <div class="field">
+              <label for="p-boligtype-en">Type of home</label>
+              <select id="p-boligtype-en" name="boligtype">
+                <option value="">Select…</option>
+                <option>Apartment</option>
+                <option>House</option>
+                <option>Townhouse</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="p-areal-en">Approx. area (m²) <span style="font-weight:400;color:var(--gray)">(optional)</span></label>
+              <input type="number" id="p-areal-en" name="areal" min="1" inputmode="numeric">
+            </div>
+            <div class="field full">
+              <label for="p-rum-en">Number of rooms and bathrooms</label>
+              <input type="text" id="p-rum-en" name="rum" placeholder="E.g. 3 rooms and 1 bathroom">
+            </div>
+            <div class="field full">
+              <label>Desired service</label>
+              <div class="checks">
+                <label><input type="checkbox" name="service" value="Regular cleaning"> Regular cleaning</label>
+                <label><input type="checkbox" name="service" value="Deep cleaning"> Deep cleaning</label>
+                <label><input type="checkbox" name="service" value="Thorough cleaning of kitchen/bathroom"> Thorough cleaning of kitchen/bathroom</label>
+                <label><input type="checkbox" name="service" value="Moving cleaning"> Moving cleaning</label>
+                <label><input type="checkbox" name="service" value="Other"> Other</label>
+              </div>
+            </div>
+            <div class="field full">
+              <label for="p-frekvens-en">Frequency</label>
+              <select id="p-frekvens-en" name="frekvens">
+                <option value="">Select…</option>
+                <option>One-time task</option>
+                <option>Weekly</option>
+                <option>Every other week</option>
+                <option>Monthly</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="field full">
+              <label for="p-besked-en">Describe your needs and special wishes</label>
+              <textarea id="p-besked-en" name="besked"></textarea>
+            </div>
+          </div>
+          <div class="form-footer">
+            <button type="submit" class="btn btn-primary">Send inquiry</button>
+            <p>We will get back to you by e‑mail or phone to clarify any questions before we send a quote.</p>
+          </div>
+        </form>
+
+        <form id="form-erhverv-en" onsubmit="submitForm(event,'en')" novalidate style="display:none">
+          <h2 style="margin-bottom:24px">Inquiry – commercial cleaning</h2>
+          <div class="form-grid">
+            <div class="field">
+              <label for="e-kontakt-en">Contact person <span class="req">*</span></label>
+              <input type="text" id="e-kontakt-en" name="kontaktperson" required autocomplete="name">
+            </div>
+            <div class="field">
+              <label for="e-firma-en">Company name <span class="req">*</span></label>
+              <input type="text" id="e-firma-en" name="virksomhed" required autocomplete="organization">
+            </div>
+            <div class="field">
+              <label for="e-email-en">E‑mail <span class="req">*</span></label>
+              <input type="email" id="e-email-en" name="email" required autocomplete="email">
+            </div>
+            <div class="field">
+              <label for="e-telefon-en">Phone <span class="req">*</span></label>
+              <input type="tel" id="e-telefon-en" name="telefon" required autocomplete="tel">
+            </div>
+            <div class="field">
+              <label for="e-lokale-en">Type of premises</label>
+              <select id="e-lokale-en" name="lokaletype">
+                <option value="">Select…</option>
+                <option>Office</option>
+                <option>Clinic</option>
+                <option>Shop</option>
+                <option>Warehouse</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="e-areal-en">Approx. area (m²)</label>
+              <input type="number" id="e-areal-en" name="areal" min="1" inputmode="numeric">
+            </div>
+            <div class="field full">
+              <label for="e-frekvens-en">Frequency</label>
+              <select id="e-frekvens-en" name="frekvens">
+                <option value="">Select…</option>
+                <option>One-time task</option>
+                <option>Weekly</option>
+                <option>Several times a week</option>
+                <option>Every other week</option>
+                <option>Monthly</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="field full">
+              <label for="e-besked-en">Special requirements / remarks</label>
+              <textarea id="e-besked-en" name="besked"></textarea>
+            </div>
+          </div>
+          <div class="form-footer">
+            <button type="submit" class="btn btn-primary">Send inquiry</button>
+          </div>
+        </form>
+      </div>
+
+      <aside class="contact-side">
+        <div class="card" style="padding:32px">
+          <h2 style="margin-bottom:16px">Other ways to contact us</h2>
+          <div class="contact-item">
+            <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg>
+            <a href="mailto:contact.mdcleaning@gmail.com">contact.mdcleaning@gmail.com</a>
+          </div>
+          <div class="contact-item">
+            <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <span style="color:var(--gray)">Phone: to be announced</span>
+          </div>
+          <div class="contact-item">
+            <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span style="color:var(--gray)">Copenhagen and surrounding area</span>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </section>
+</div>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">
+          <span class="logo-mark">MD</span>
+          MD Cleaning
+        </div>
+        <p style="color:rgba(255,255,255,.65)" data-da="Rengøring i København og omegn" data-en="Cleaning in Copenhagen and the surrounding area">Rengøring i København og omegn</p>
+      </div>
+      <div>
+        <h4 data-da="Sider" data-en="Pages">Sider</h4>
+        <ul>
+          <li><a href="#/" data-da="Forside" data-en="Home">Forside</a></li>
+          <li><a href="#/private" data-da="Private" data-en="Residential">Private</a></li>
+          <li><a href="#/erhverv" data-da="Erhverv" data-en="Business">Erhverv</a></li>
+          <li><a href="#/om-os" data-da="Om os" data-en="About us">Om os</a></li>
+          <li><a href="#/kontakt" data-da="Kontakt" data-en="Contact">Kontakt</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 data-da="Kontakt" data-en="Contact">Kontakt</h4>
+        <ul>
+          <li><a href="mailto:contact.mdcleaning@gmail.com">contact.mdcleaning@gmail.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © <span id="year"></span> MD Cleaning. <span data-da="Alle rettigheder forbeholdes." data-en="All rights reserved.">Alle rettigheder forbeholdes.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // ---------- Language ----------
+  let currentLang = 'da'; // Danish by default
+
+  const metaInfo = {
+    da: {
+      '/': 'MD Cleaning — Professionel rengøring i København',
+      '/private': 'Private — MD Cleaning',
+      '/erhverv': 'Erhverv — MD Cleaning',
+      '/om-os': 'Om os — MD Cleaning',
+      '/kontakt': 'Få et tilbud — MD Cleaning'
+    },
+    en: {
+      '/': 'MD Cleaning — Professional cleaning in Copenhagen',
+      '/private': 'Residential — MD Cleaning',
+      '/erhverv': 'Business — MD Cleaning',
+      '/om-os': 'About us — MD Cleaning',
+      '/kontakt': 'Get a quote — MD Cleaning'
+    }
+  };
+
+  // Maps route -> page id suffix base
+  const routes = {
+    '/': 'page-forside',
+    '/private': 'page-private',
+    '/erhverv': 'page-erhverv',
+    '/om-os': 'page-omos',
+    '/kontakt': 'page-kontakt'
+  };
+
+  function toggleLang(){
+    currentLang = (currentLang === 'da') ? 'en' : 'da';
+    applyLang();
+    router();
+  }
+
+  function applyLang(){
+    // Button shows the language you can SWITCH TO
+    document.getElementById('langBtn').textContent = (currentLang === 'da') ? 'EN' : 'DA';
+    document.documentElement.lang = currentLang;
+
+    // Translate all elements carrying data-da / data-en
+    document.querySelectorAll('[data-da][data-en]').forEach(el=>{
+      el.textContent = el.getAttribute('data-' + currentLang);
+    });
+  }
+
+  // ---------- Hash routing ----------
+  function router(){
+    let path = location.hash.replace('#','') || '/';
+    if(!routes[path]) path = '/';
+
+    document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+    const pageEl = document.getElementById(routes[path] + '-' + currentLang);
+    if(pageEl) pageEl.classList.add('active');
+
+    document.title = metaInfo[currentLang][path];
+
+    // Active nav state
+    document.querySelectorAll('.nav-links a[data-route]').forEach(a=>{
+      a.classList.toggle('active', a.dataset.route === path);
+    });
+
+    // Close mobile menu & scroll to top
+    document.getElementById('navLinks').classList.remove('open');
+    window.scrollTo({top:0, behavior:'instant'});
+  }
+
+  window.addEventListener('hashchange', router);
+  applyLang();
+  router();
+
+  // ---------- Mobile menu ----------
+  function toggleMenu(){
+    document.getElementById('navLinks').classList.toggle('open');
+  }
+
+  // ---------- Hero anchor link ----------
+  function scrollToServices(e, targetId){
+    e.preventDefault();
+    if((location.hash.replace('#','')||'/') !== '/'){ location.hash = '#/'; }
+    setTimeout(()=>{
+      const el = document.getElementById(targetId);
+      if(el) el.scrollIntoView({behavior:'smooth'});
+    }, 50);
+  }
+
+  // ---------- Contact form toggle (per language) ----------
+  function switchForm(type, lang){
+    const privat = (type === 'privat');
+    document.getElementById('form-privat-' + lang).style.display = privat ? 'block' : 'none';
+    document.getElementById('form-erhverv-' + lang).style.display = privat ? 'none' : 'block';
+    document.getElementById('tab-privat-' + lang).classList.toggle('active', privat);
+    document.getElementById('tab-erhverv-' + lang).classList.toggle('active', !privat);
+    document.getElementById('tab-privat-' + lang).setAttribute('aria-selected', privat);
+    document.getElementById('tab-erhverv-' + lang).setAttribute('aria-selected', !privat);
+    document.getElementById('success-' + lang).style.display = 'none';
+  }
+
+  // ---------- Form submit (frontend demo) ----------
+  function submitForm(e, lang){
+    e.preventDefault();
+    const form = e.target;
+
+    // Simple required validation
+    let valid = true;
+    form.querySelectorAll('[required]').forEach(input=>{
+      if(!input.value.trim()){
+        input.style.borderColor = '#C0564F';
+        valid = false;
+      } else {
+        input.style.borderColor = '#D5DFE8';
+      }
+    });
+    // Email format
+    const email = form.querySelector('input[type="email"]');
+    if(email && email.value && !/^\S+@\S+\.\S+$/.test(email.value)){
+      email.style.borderColor = '#C0564F';
+      valid = false;
+    }
+    if(!valid) return;
+
+    // Hide form + toggle, show confirmation
+    form.style.display = 'none';
+    document.getElementById('toggle-' + lang).style.display = 'none';
+    const msg = document.getElementById('success-' + lang);
+    msg.style.display = 'block';
+    msg.scrollIntoView({behavior:'smooth', block:'center'});
+    form.reset();
+  }
+</script>
+</body>
+</html>
+
